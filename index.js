@@ -11,13 +11,13 @@ const returnLastTwoDrivers = function(drivers) {
   return newArray;
 };
 
-function selectingDrivers(selector) {
+const selectingDrivers = function (selector) {
   if (selector == 0) {
     return returnFirstTwoDrivers;
   } else {
     return returnLastTwoDrivers;
   }
-}
+};
 
 function createFareMultiplier(multiplier) {
   let price = function(fare) {
