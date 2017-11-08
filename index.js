@@ -26,13 +26,9 @@ function createFareMultiplier(multiplier) {
   return price;
 }
 
-function fareDoubler() { 
-  return createFareMultiplier(2);
-}
+const fareDoubler = createFareMultiplier(2);
 
-function fareTripler() {
-  return createFareMultiplier(3);
-}
+const fareTripler = createFareMultiplier(3);
 
 function selectDifferentDrivers(drivers, functionSelector) {
   return functionSelector(drivers);
