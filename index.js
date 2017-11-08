@@ -1,26 +1,26 @@
 // Code your solution in this file!
-const returnFirstTwoDrivers = function (drivers) {
+const returnFirstTwoDrivers = function(drivers) {
   let newArray = [];
   newArray.push(drivers[0], drivers[1]);
   return newArray;
 };
 
-const returnLastTwoDrivers = function (drivers) {
+const returnLastTwoDrivers = function(drivers) {
   let newArray = [];
-  newArray.push(drivers[drivers.length -2], drivers[drivers.length-1]);
+  newArray.push(drivers[drivers.length - 2], drivers[drivers.length - 1]);
   return newArray;
 };
 
 function selectingDrivers(selector) {
-  if(selector == 0){
+  if (selector == 0) {
     return returnFirstTwoDrivers;
   } else {
-  return returnLastTwoDrivers;
-}
+    return returnLastTwoDrivers;
+  }
 }
 
 function createFareMultiplier(multiplier) {
-  let price = function (fare){
+  let price = function(fare) {
     price = fare * multiplier;
   };
   return price;
