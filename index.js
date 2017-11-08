@@ -21,7 +21,7 @@ function selectingDrivers(selector) {
 
 function createFareMultiplier(multiplier) {
   function(fare) {
-    let price = null;
+    let price = 0;
     price = fare * multiplier;
     return price;
   }
