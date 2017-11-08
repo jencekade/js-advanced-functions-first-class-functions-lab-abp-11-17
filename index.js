@@ -22,7 +22,7 @@ function selectingDrivers(selector) {
 function createFareMultiplier(multiplier) {
   let price = function(fare) {
     return fare * multiplier;
-  }
+  };
   return price;
 }
 
