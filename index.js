@@ -11,13 +11,17 @@ const returnLastTwoDrivers = function (drivers) {
   return newArray;
 };
 
-/*function selectingDrivers(returnFirstTwoDrivers, returnLastTwoDrivers) {
-  return [returnFirstTwoDrivers, returnLastTwoDrivers];
-}*/
+function selectingDrivers(selector) {
+  if(selector == 0){
+    return returnFirstTwoDrivers;
+  } else {
+  return returnLastTwoDrivers;
+}
+}
 
 function createFareMultiplier(multiplier) {
   let price = function (fare){
-    price =fare * multiplier;
+    price = fare * multiplier;
   };
   return price;
 }
