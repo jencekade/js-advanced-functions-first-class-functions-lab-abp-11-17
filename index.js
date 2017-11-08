@@ -11,11 +11,12 @@ const returnLastTwoDrivers = function(drivers) {
   return newArray;
 };
 
-function selectingDrivers(selector) {
+/*function selectingDrivers(selector1) {
   let selectedDrivers1 = [returnFirstTwoDrivers, returnLastTwoDrivers];
-  return selectedDrivers1[selector];
-}
-//const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
+  return selectedDrivers1[selector1];
+}*/
+//the instructions suggests that this is just an array
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
 function createFareMultiplier(multiplier) {
   let price = function(fare) {
