@@ -20,10 +20,10 @@ function selectingDrivers(selector) {
 }
 
 function createFareMultiplier(multiplier) {
-  let price = function(fare) {
-    price = fare * multiplier;
-  };
-  return price;
+  function(fare) {
+    fare *= multiplier;
+    return fare;
+  }
 }
 
 const fareDoubler = createFareMultiplier(2);
